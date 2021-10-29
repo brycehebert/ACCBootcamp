@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Deck of Cards</title>
+    </head>
+    <body>
+        <h1>Deck of Cards</h1>
+
+        <% if (cards) { %>
+            <% cards.forEach(element => { %>
+                <img src="<%= element.image %>" alt="<%= element.value %> of <%= element.suit %>">
+            <% }); %>
+        <% }; %>
+
+        <form action="/deal" method="get">
+            <button type="submit">Deal me in!!</button>
+        </form>
+    </body>
+</html>

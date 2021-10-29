@@ -1,0 +1,29 @@
+body {
+    background-color: #9dddf3;
+}
+
+.main {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn {
+    color: #fff;
+    font-size: 24px;
+    background-color: #0c1764;
+    margin-top: 24px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+#price {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    margin-top: 24px;
+}

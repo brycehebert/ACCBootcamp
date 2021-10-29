@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+
+        <script src="script.js" defer></script>
+        <title>Bitcoin</title>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Bitcoin Price App</h1>
+            <form id="price-form">
+                <input type="radio" name="curr" id="usd" value="USD" checked />
+                <label for="usd">USD</label>
+                <input type="radio" name="curr" id="gbp" value="GBP" />
+                <label for="gbp">GBP</label>
+                <input type="radio" name="curr" id="eur" value="EUR" />
+                <label for="eur">EUR</label>
+                <div><button type="submit" class="btn" id="submit-btn">Get Price</button></div>
+            </form>
+            <div id="price"></div>
+        </div>
+    </body>
+</html>

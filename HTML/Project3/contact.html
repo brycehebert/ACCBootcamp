@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Us</title>
+        <meta name="description" content="Contact The Breakfast Restaurant">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Contact Us</h1>
+        <p>
+            Do you need to place an online order? Fill out this form and we'll get you order ready! (Note: Please do not use this form to complain about the quality of our food.)
+        </p>
+        <form id="contact">
+            <label for="fname"><p><strong>First Name:</strong></p></label>
+            <input type="text" id="fname" name="fname" placeholder="Jim">
+            <label for="lname"><p><strong>Last Name:</strong></p></label>
+            <input type="text" id="lname" name="lname" placeholder="Davis">
+            <label for="email"><p><strong>Email:</strong></p></label>
+            <input type="email" id="email" name="email" placeholder="blah@gmail.com" required="required">
+            <label for="phone"><p><strong>Phone Number:</strong></p></label>
+            <input type="tel" id="phone" name="phone" placeholder="777-7777">
+            <br><br>
+            <textarea rows="16" cols="48" placeholder="What would you like to order?"></textarea>
+            <label for="hashbrowns"><p><strong>Would you like a side of hashbrowns?</strong></p></label>
+            <input type="radio" id="hashtrue" name="hashbrowns" value="true">
+            <label for="hashtrue">Yes</label>
+            <br>
+            <input type="radio" id="hashfalse" name="hashbrowns" value="false">
+            <label for="hashfalse">No</label>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+    </body>
+</html>

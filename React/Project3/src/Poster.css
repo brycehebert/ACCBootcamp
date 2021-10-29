@@ -1,0 +1,12 @@
+
+.cropped img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid blue;
+}
+
+.cropped {
+  height: 625px;
+  width: 420px;
+}

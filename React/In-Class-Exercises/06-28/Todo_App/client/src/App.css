@@ -1,0 +1,33 @@
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App .completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.App .container {
+  position: relative;
+  width: 50vw;
+}
+
+.App .right {
+  position: absolute;
+  right: 0;
+  background-color: #333;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 2px;
+}

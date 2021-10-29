@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: powderblue;
+}
+
+.container {
+    width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.clock {
+    width: 600px;
+}
+
+.clock-face {
+    fill: #FFFFFF;
+}
+
+.clock-numbers {
+    font-family: Arial;
+    font-size: 72px;
+    fill: #ffffff;
+}
+
+.hand {
+    transform-origin: center center;
+    transition: transform .3s;
+    transition-timing-function: cubic-bezier();
+}
+
+#second-hand {
+    fill: red;
+    transform: rotate(-90deg);
+}
+
+#minute-hand {
+    transform: rotate(-90deg);
+}
+
+#hour-hand {
+    fill: green;
+    transform: rotate(-90deg);
+}

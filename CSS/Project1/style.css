@@ -1,0 +1,31 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* button elements which are children of the .buttons class. */
+.buttons > button { 
+    flex: 1;
+}
+
+button {
+    height: 80px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font: 2em 'Oswald', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#buttonblue{
+    background: #0D47A1;
+}
+#buttonred{
+    background: #F44336;
+}
+#buttongreen{
+    background: #4CAF50;
+}
+#buttonyellow{
+    background: #FFEB3B;
+}

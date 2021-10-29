@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    height: 10em;
+    background: blanchedalmond;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.child {
+    background: teal;
+    width: 80px;
+}

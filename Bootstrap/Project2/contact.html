@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/21807fecb2.js" crossorigin="anonymous"></script>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Oswald Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+
+        <title>The Social</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom bg-light py-0">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand logo"><i class="far fa-grin-beam"></i> The Social</a>
+
+            <!-- Collapse Toggle Button-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapse Content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link p-3">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link p-3">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link p-3 active">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline justify-content-center">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" class="form-control form-control-sm mr-0 mr-sm-2" placeholder="Email Address">
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" id="password" class="form-control form-control-sm mt-2 mt-sm-0" placeholder="Password">
+                    <button class="btn btn-success my-2 mr-1 mb-sm-1 ml-sm-2">Login</button>
+                    <button class="btn btn-primary my-2 ml-1 mb-sm-1">Register</button>
+                </form>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <div class="bg bg-contact">
+            <div class="container d-flex align-items-center justify-content-center w-50 h-100">
+                <div class="text-center text-white">
+                    <h1 class="display-4 font-weight-bold text-uppercase">Wisdom through adversity. Unity through purpose.</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="name"><strong>Name</strong></label>
+                                <input type="text" class="form-control" id="name" placeholder="Your name">
+                                <label for="email-input"><strong>Email address</strong></label>
+                                <input type="email" class="form-control" id="email-input" placeholder="Your Email">
+                                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <label for="comments"><strong>What would you like to share with us?</strong></label>
+                                <textarea class="form-control" rows="3" id="comments"></textarea>
+                                <label for="file"><strong>File Input</strong></label>
+                                <input type="file" class="form-control" id="file">
+                                <small class="form-text text-muted mb-2">You can upload images or PDF files in necessary.</small>
+                                <h5 class="border-bottom border-dark"><strong>Are you a current user?</strong></h5>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="current-user-true" name="current-user" value="true">
+                                    <label for="current-user-true">Yes, I am.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="current-user-false" name="current-user" value="false">
+                                    <label for="current-user-false" class="mb-5">Not yet, but I will be soon. I promise.</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="robot-check" name="robot-check" value="not-robot">
+                                    <label for="robot-check">I am not a robot.</label>
+                                </div>
+                                <input type="submit" value="Submit" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>We really want to hear from you.</h2>
+                        <h4 class="text-secondary">Your feedback is important to us. We are continuously improving our products, and your data helps us make those improvements.</h4>
+                        <p class="text-secondary">Please be patient with us as we are currently revamping our system. If you do not receive a response within 48 hours, it means we are too busy to reply to your complaints.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid bg-dark">
+            <div class="row flex-sm-row">
+                <div class="col-sm-6">
+                    <a href="index.html" class="navbar-brand logo text-white"><i class="far fa-grin-beam"></i> The Social</a>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="list-unstyled footer-menu text-nowrap">
+                        <li class="title text-uppercase">Our App</li>
+                        <li><a href="#" class="text-white">News Feed</a></li>
+                        <li><a href="#" class="text-white">Messenger</a></li>
+                        <li><a href="#" class="text-white">Profile</a></li>
+                        <li><a href="#" class="text-white">Photos</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="list-unstyled footer-menu text-nowrap">
+                        <li class="title text-uppercase">How To</li>
+                        <li><a href="#" class="text-white">Help Center</a></li>
+                        <li><a href="#" class="text-white">Privacy Basics</a></li>
+                        <li><a href="#" class="text-white">Create a Page</a></li>
+                        <li><a href="#" class="text-white">Create an Ad</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="list-unstyled footer-menu text-nowrap">
+                        <li class="title text-uppercase">Menu</li>
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+</html>

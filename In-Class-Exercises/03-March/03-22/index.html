@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            div {
+                margin: 0 auto;
+                width: 20vw;
+                height: 100px;
+                padding: 5% 10%;
+                text-align: center;
+            }
+
+            #first_div {
+                background-color: skyblue;
+                border: 3px solid darkblue;
+            }
+
+            #second_div {
+                background-color: beige;
+                border: 3px solid brown;
+            }
+
+            span {
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+                    Verdana, sans-serif;
+            }
+            
+            button {
+                display: block;
+                margin: 10px auto;
+            }
+        </style>
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <div id="first_div">
+            <span class="first_span">This is some text to test out.</span>
+            <span class="second_span">This is some text to test out.</span>
+        </div>
+        <div id="second_div">
+            <span class="first_span">This is some text to test out.</span>
+            <span class="second_span">This is some text to test out.</span>
+        </div>
+        <button>Stop</button>
+
+        <script>
+            let firstDiv = document.getElementById("first_div");
+            let secondDiv = document.getElementById("second_div");
+            firstDiv.style.color = "red";
+
+            let running = true;
+            let interval = swapColors();
+
+            function swapColors() {
+                let interval = setInterval(() => {
+                    let temp = getComputedStyle(firstDiv).backgroundColor;
+                    firstDiv.style.backgroundColor = getComputedStyle(secondDiv).backgroundColor;
+                    secondDiv.style.backgroundColor = temp;
+                }, 5000);
+                return interval;
+            }
+
+            document.querySelector("button").addEventListener("click", () => {
+                if (running) {
+                    clearInterval(interval);
+                    document.querySelector("button").innerText = "Start";
+                    running = false;
+                } else {
+                    interval = swapColors();
+                    document.querySelector("button").innerText = "Stop";
+                    running = true;
+                }
+            });
+        </script>
+    </body>
+</html>

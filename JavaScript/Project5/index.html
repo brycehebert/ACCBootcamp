@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Desserts</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/21807fecb2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <span class="logo">The Desserts <i class="fas fa-utensils"></i></span>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Trending</a>
+                    <div class="dropdown-content">
+                        <a href="#">Entertainment</a>
+                        <a href="#">Travel</a>
+                        <a href="#">Education</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Tech</a>
+                    <div class="dropdown-content">
+                        <a href="#">Latest</a>
+                        <a href="#">Programming</a>
+                        <a href="#">App Reviews</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Politics</a>
+                    <div class="dropdown-content">
+                        <a href="#">Headlines</a>
+                        <a href="#">The Facts</a>
+                        <a href="#">The Gossip</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Story</a>
+                        <a href="#">Donate</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">FAQ</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Policy</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="#">Email</a>
+                        <a href="#">Phone</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="main">
+            <h1>Image gallery of your favorite treats</h1>
+            <img src="assets/1.jpg" alt="" id="gallery">
+            <div class="buttons">
+                <button id="btnPrevious" onclick="imgTracker('previous')">Previous</button>
+                <button id="btnNext" onclick="imgTracker('next')">Next</button>
+            </div>
+        </div>
+        <footer>
+            <p>The Desserts</p>
+            <ul class="footer-menu">
+                <a href="#">Home</a>
+                <a href="#">Tech</a>
+                <a href="#">Politics</a>
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+            </ul>
+            <p class="copyright">The News &copy; 1984</p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>

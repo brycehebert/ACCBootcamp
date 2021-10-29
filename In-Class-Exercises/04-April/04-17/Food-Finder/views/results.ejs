@@ -1,0 +1,12 @@
+<%- include("partials/header") %> 
+
+<div class="container">
+
+    <% data.forEach(elem => { %>
+        <p><%= elem.name %> - <%= elem.price %> = <%= elem.rating %></p>
+        <% let star = elem.rating % 1 === 0 ? `/regular/regular_${elem.rating}.png` : `/regular/regular_${Math.floor(elem.rating)}_half.png` %>
+        <p>Stars: <img src="<%= star %>" alt=""></p>
+    <% }) %>
+</div>
+    
+<%- include("partials/footer") %> 

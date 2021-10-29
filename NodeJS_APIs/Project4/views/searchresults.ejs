@@ -1,0 +1,13 @@
+<%# recieves data Array representing the businesses returned from yelp request %> 
+
+<%- include("partials/header", {title: "Search Results"}) %>
+<div class="container mt-3">
+    <h1 class="mb-3">Here are some great places nearby: </h1>
+    <% data.forEach( el => { %>
+        <%- include("partials/business", {business: el}) %>
+    <% }) %>
+    <div class="text-center attribution">
+        <span>Data provided by </span> <a href="https://www.yelp.com/"><img src="images/yelp.svg" alt="Yelp logo"></a>
+    </div>
+</div>
+<%- include("partials/footer") %>

@@ -1,0 +1,14 @@
+<%- include("partials/header", {title: "Yelp"}) %>
+
+<div class="container">
+    <h1>Find a food place near you!</h1>
+    <form action="/searchresults" method="get">
+        <div class="form-group">
+            <label for="searchQuery">Enter your location:</label>
+            <input type="text" class="form-control" id="searchQuery" name="searchQuery" placeholder="Enter your location">
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </div>
+    </form>
+</div>
+
+<%- include("partials/footer") %>

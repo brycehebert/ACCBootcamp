@@ -1,0 +1,10 @@
+<%# receives business Object representing a single business %> 
+<div class="business mb-3 pl-1">
+     <a href= "<%= business.url %>" target="_blank">
+          <h3 class="d-inline-block"> <%= business.name %> </h3>
+     </a>
+
+     <% let star = business.rating % 1 === 0 ? `images/regular/regular_${business.rating}@2x.png` : `images/regular/regular_${Math.floor(business.rating)}_half@2x.png` %>
+
+     <img class="rating" src="<%= star %>" alt="<%= business.rating %> out 5 Stars">
+</div>

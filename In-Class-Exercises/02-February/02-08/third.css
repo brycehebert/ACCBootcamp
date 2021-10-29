@@ -1,0 +1,14 @@
+.container {
+    height: 300px;
+    width: 300px;
+    background-color: grey;
+    position: relative;
+}
+
+.div2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    right: 100px;
+}

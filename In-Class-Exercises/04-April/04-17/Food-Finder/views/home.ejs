@@ -1,0 +1,23 @@
+<%- include("partials/header") %> 
+
+<div class="container">
+    <form action="/locationSearch">
+        <div class="form-group">
+            <label class="w-75">
+                Enter a location:
+                <input 
+                type="search" 
+                name="locale" 
+                class="form-control mw-75"
+                id="location" 
+                placeholder="Enter your location..."
+                autocomplete="off"
+                autofocus
+                />
+                <button type="submit" class="btn btn-success mt-3">Submit</button>
+            </label>
+        </div>
+    </form>
+</div>
+    
+<%- include("partials/footer") %> 

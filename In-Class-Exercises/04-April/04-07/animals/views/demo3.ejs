@@ -1,0 +1,7 @@
+<%- include("partials/header") %>
+<h1>I'm a list of animals.</h1>
+<% animals.forEach(el => { %>
+<p>Name of Animal: <%= el.name %></p>
+<p>Breed: <%= el.breed %></p>
+<% }); %>
+<%- include("partials/footer") %>

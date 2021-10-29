@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+<div class="main">
+    <h1>Bitcoin Price App</h1>
+    <form action="/" method="get">
+        <input type="radio" name="curr" id="usd" value="USD" checked />
+        <label for="usd">USD</label>
+        <input type="radio" name="curr" id="gbp" value="GBP" />
+        <label for="gbp">GBP</label>
+        <input type="radio" name="curr" id="eur" value="EUR" />
+        <label for="eur">EUR</label>
+        <div><button type="submit" class="btn">Get Price</button></div>
+    </form>
+
+    <% if(price && symbol) { %>
+
+    <h2>This is the current price:</h2>
+    <div class="price"><%- symbol %> <%= price %></div>
+
+    <% } %>
+    <a href="https://www.coindesk.com/price/bitcoin">Powered by CoinDesk</a>
+</div>
+<%- include("partials/footer") %>

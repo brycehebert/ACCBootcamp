@@ -1,0 +1,22 @@
+body {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.desc {
+    padding: 0px 20px;
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}

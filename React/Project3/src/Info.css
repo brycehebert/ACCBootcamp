@@ -1,0 +1,15 @@
+.Info .cast-tag {
+  margin-bottom: 0;
+}
+
+.Info .cast-list {
+  margin-top: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  display: inline-block;
+}
+
+.Info .cast-list li {
+  padding: 4px 0;
+}

@@ -1,0 +1,17 @@
+.inner { 
+    background-color: aliceblue;  
+}
+
+.inner img {
+    max-width: 100%;
+}
+
+.tmdb {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.tmdb img {
+    max-width: 20%;
+}

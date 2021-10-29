@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Using SVG really just to learn about it.
+                 Used Adobe Illustrator to generate most of this. -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 509 509" class="clock">
+                <path class="clock-face" d="M254.5 508.5c-140.3 0-254-113.7-254-254 0-67.4 26.8-132 74.4-179.6C174.2-24.2 335-24 434.1 75.3c98.9 99.1 98.9 259.6 0 358.8C386.6 481.9 321.9 508.7 254.5 508.5zM254.5 32.5c-122.4 0-222 99.6-222 222s99.6 222 222 222 222-99.6 222-222S376.9 32.5 254.5 32.5z"/>
+                <path class="clock-face" d="M254.5 1c140 0.1 253.5 113.7 253.4 253.7 -0.1 101.8-61 193.7-154.7 233.3 -129.3 53.7-277.7-7.6-331.4-136.9C-31.5 222.9 28.3 75.7 155.8 20.9 187 7.7 220.6 0.9 254.5 1M254.5 477C377.2 477 477 377.2 477 254.5S377.2 32 254.5 32 32 131.8 32 254.5 131.8 477 254.5 477M254.5 0C113.9 0 0 113.9 0 254.5S113.9 509 254.5 509 509 395.1 509 254.5 395.1 0 254.5 0zM254.5 476C132.2 476 33 376.8 33 254.5S132.2 33 254.5 33 476 132.2 476 254.5 376.8 476 254.5 476z"/>
+                <text transform="matrix(1 0 0 1 215.0459 92)" class="clock-numbers">12</text>
+                <text transform="matrix(1 0 0 1 429.9135 279.8412)" class="clock-numbers">3</text>
+                <text transform="matrix(1 0 0 1 235.0674 466.6112)" class="clock-numbers">6</text>
+                <text transform="matrix(1 0 0 1 41.3914 279.8409)" class="clock-numbers">9</text>
+                <rect width="200px" height="10px" x="249.5px" y="249.5px" class="hand" id="second-hand"></rect>
+                <rect width="200px" height="10px" x="249.5px" y="249.5px" class="hand" id="minute-hand"></rect>
+                <rect width="150px" height="10px" x="249.5px" y="249.5px" class="hand" id="hour-hand"></rect>
+                <circle cx="254.5px" cy="254.5px" r="15px"></circle>
+            </svg>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

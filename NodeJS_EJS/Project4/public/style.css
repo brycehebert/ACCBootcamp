@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 320px;
+    margin: 32px 5px;
+    padding: 5px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 5px grey;
+}
+
+h2 {
+    margin: 8px 0px;
+}
+
+p {
+    margin: 8px 0px;
+}

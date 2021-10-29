@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/react@16.0.0-rc.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.0.0-rc.2/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>React</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      class Garfield extends React.Component {
+        render() {
+          return (
+            <div className="theImage">
+              <h1 className="name">Life</h1>
+              <img src="https://64.media.tumblr.com/6b949e2072f18666a0ab04da6681a3ff/tumblr_pyghofiesi1qz8z2ro1_1280.png" />
+              <h3>How does he feel?</h3>
+              <FeelingsList />
+            </div>
+          );
+        }
+      }
+
+      class FeelingsList extends React.Component {
+        render() {
+          const theStyles = { fontSize: "24px" };
+          return (
+            <ul style={theStyles}>
+              <li>Happy</li>
+              <li>Sad</li>
+            </ul>
+          );
+        }
+      }
+
+      ReactDOM.render(<Garfield />, document.getElementById("app"));
+    </script>
+  </body>
+</html>

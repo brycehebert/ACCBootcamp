@@ -1,0 +1,13 @@
+.div1 {
+    height: 200px;
+    width: 200px;
+    background: green;
+    position: relative;
+    bottom: 80px;
+}
+
+.div2 {
+    height: 200px;
+    width: 200px;
+    background: red;
+}

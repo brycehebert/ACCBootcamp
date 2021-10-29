@@ -1,0 +1,29 @@
+<%- include("partials/header", {title: "Bryce's Portfolio", navColor: "light"}) %>
+
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <h1 class="text-center mt-5">Bryce's Portfolio</h1>
+    </div>
+    <!-- end of first row -->
+
+    <% data.forEach(el => { %>
+        <% let key = Object.keys(el) %>
+        <div class="row">
+            <% el[key[0]].forEach(element => { %>
+                <% let {src, alt, href, content} = element %>
+                <div class="col">
+                    <div class="img-container">
+                        <img src=<%= src %> alt= "<%= alt %>">
+                    </div>
+                    <a href=<%= href %> target="_blank">
+                        <h2 class="text-center mt-3 mb-5"><%= content %></h2>
+                    </a>
+                </div>
+            <% }) %>
+        </div>
+    <% }) %>
+    <!-- end of second row -->
+</div>
+
+<%- include("partials/footer") %>

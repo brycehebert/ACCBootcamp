@@ -1,0 +1,8 @@
+.List {
+  text-align: center;
+}
+
+.List ul, .List ol {
+  list-style: none;
+}
+

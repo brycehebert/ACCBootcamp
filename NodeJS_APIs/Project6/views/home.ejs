@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+  
+<div class="container">
+    <h1 class="page-title text-center py-3">Hello, Cocktails</h1>
+
+    <div class="row">
+        <div class="col-sm-5 col-md-4">
+            <img
+                src= <%= data.strDrinkThumb %>
+                alt="<%= data.strDrink %>"
+                class="drink-image"
+            />
+            <div class="drink-title text-center"><%= data.strDrink %></div>
+            <a href="/getDrink"><button class="btn btn-success new-drink-btn mt-5 mb-5">Need a drink?</button></a>
+        </div>
+
+        <div class="col-sm-7 col-md-8">
+            <div class="ingredients d-flex flex-wrap">
+
+                <% data.ingredients.forEach(element => { %>
+                    <%- include("partials/ingredientList", { ingredient: element }) %>
+                <% }) %>
+
+            </div>
+            <p class="instructions p-3">
+                <%= data.strInstructions %> 
+            </p>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %>  

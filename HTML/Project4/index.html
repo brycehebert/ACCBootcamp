@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hotel Room Serive</title>
+        <meta name="description" content="Order Breakfast Service">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>Hotel Room Service</h1>
+
+        <h3>Welcome to our hotel! We hope you enjoy your stay!</h3>
+
+        <p>
+            We value you as our guest! Use this online form to have a hot, delicious breakfast deliverd to your room. Please fill out this form before midnight so that we can make proper accomodations. All meals are served before 10AM. Tipping is encouraged.
+        </p>
+        <form id="breakfastorder" name="breakfastorder">
+            <fieldset id="guestinfo">
+                <legend id="guestinfotitle">Hotel Guest Contact Info</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="roomnum">Room Number:</label>
+                <input type="text" id="roomnum" name="roomnum"><br><br>
+            </fieldset><br>
+
+            <label for="time">What time would you like to be served?</label>
+            <select name="time" id="time">
+                <option value="6am">6AM</option>
+                <option value="7am">7AM</option>
+                <option value="8am">8AM</option>
+                <option value="9am">9AM</option>
+                <option value="10am">10AM</option>
+            </select><br><br>
+
+            <label for="entree">Please choose your entree: <br><br></label>
+            <select name="entree" id="entree" size="5">
+                <option value="wafflesandchick">Waffles and chicken</option>
+                <option value="pancakes">Pancakes and syrup</option>
+                <option value="hashbrowns">Hashbrowns</option>
+                <option value="baconeggs">Bacon &amp; Eggs</option>
+                <option value="toast">Boring ol' toast</option>
+            </select><br>
+
+            <p>Would you like butter?</p>
+            <input type="radio" id="butteryes" name="butter" value="butteryes">
+            <label for="butteryes">Yes</label>
+            <input type="radio" id="butterno" name="butter" value="butterno">
+            <label for="butterno">No</label>
+            <input type="radio" id="buttersurprise" name="butter" value="buttersurprise">
+            <label for="buttersurprise">Surprise me</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
